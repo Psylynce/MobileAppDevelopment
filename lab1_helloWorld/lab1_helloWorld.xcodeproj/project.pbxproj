@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FECEAC7D17DF897900855092 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECEAC7C17DF897900855092 /* UIKit.framework */; };
+		FECEAC7F17DF897900855092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECEAC7E17DF897900855092 /* Foundation.framework */; };
+		FECEAC8117DF897900855092 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECEAC8017DF897900855092 /* CoreGraphics.framework */; };
+		FECEAC8717DF897900855092 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FECEAC8517DF897900855092 /* InfoPlist.strings */; };
+		FECEAC8917DF897900855092 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEAC8817DF897900855092 /* main.m */; };
+		FECEAC8D17DF897900855092 /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEAC8C17DF897900855092 /* MADAppDelegate.m */; };
+		FECEAC8F17DF897900855092 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FECEAC8E17DF897900855092 /* Default.png */; };
+		FECEAC9117DF897900855092 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FECEAC9017DF897900855092 /* Default@2x.png */; };
+		FECEAC9317DF897900855092 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FECEAC9217DF897900855092 /* Default-568h@2x.png */; };
+		FECEAC9617DF897900855092 /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEAC9517DF897900855092 /* MADViewController.m */; };
+		FECEAC9917DF897900855092 /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECEAC9717DF897900855092 /* MADViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FECEAC7917DF897900855092 /* lab1_helloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab1_helloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECEAC7C17DF897900855092 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FECEAC7E17DF897900855092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FECEAC8017DF897900855092 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FECEAC8417DF897900855092 /* lab1_helloWorld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lab1_helloWorld-Info.plist"; sourceTree = "<group>"; };
+		FECEAC8617DF897900855092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FECEAC8817DF897900855092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FECEAC8A17DF897900855092 /* lab1_helloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab1_helloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		FECEAC8B17DF897900855092 /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
+		FECEAC8C17DF897900855092 /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
+		FECEAC8E17DF897900855092 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FECEAC9017DF897900855092 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FECEAC9217DF897900855092 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FECEAC9417DF897900855092 /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
+		FECEAC9517DF897900855092 /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
+		FECEAC9817DF897900855092 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FECEAC7617DF897900855092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECEAC7D17DF897900855092 /* UIKit.framework in Frameworks */,
+				FECEAC7F17DF897900855092 /* Foundation.framework in Frameworks */,
+				FECEAC8117DF897900855092 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FECEAC7017DF897900855092 = {
+			isa = PBXGroup;
+			children = (
+				FECEAC8217DF897900855092 /* lab1_helloWorld */,
+				FECEAC7B17DF897900855092 /* Frameworks */,
+				FECEAC7A17DF897900855092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FECEAC7A17DF897900855092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FECEAC7917DF897900855092 /* lab1_helloWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FECEAC7B17DF897900855092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FECEAC7C17DF897900855092 /* UIKit.framework */,
+				FECEAC7E17DF897900855092 /* Foundation.framework */,
+				FECEAC8017DF897900855092 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FECEAC8217DF897900855092 /* lab1_helloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				FECEAC8B17DF897900855092 /* MADAppDelegate.h */,
+				FECEAC8C17DF897900855092 /* MADAppDelegate.m */,
+				FECEAC9417DF897900855092 /* MADViewController.h */,
+				FECEAC9517DF897900855092 /* MADViewController.m */,
+				FECEAC9717DF897900855092 /* MADViewController.xib */,
+				FECEAC8317DF897900855092 /* Supporting Files */,
+			);
+			path = lab1_helloWorld;
+			sourceTree = "<group>";
+		};
+		FECEAC8317DF897900855092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FECEAC8417DF897900855092 /* lab1_helloWorld-Info.plist */,
+				FECEAC8517DF897900855092 /* InfoPlist.strings */,
+				FECEAC8817DF897900855092 /* main.m */,
+				FECEAC8A17DF897900855092 /* lab1_helloWorld-Prefix.pch */,
+				FECEAC8E17DF897900855092 /* Default.png */,
+				FECEAC9017DF897900855092 /* Default@2x.png */,
+				FECEAC9217DF897900855092 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FECEAC7817DF897900855092 /* lab1_helloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECEAC9C17DF897900855092 /* Build configuration list for PBXNativeTarget "lab1_helloWorld" */;
+			buildPhases = (
+				FECEAC7517DF897900855092 /* Sources */,
+				FECEAC7617DF897900855092 /* Frameworks */,
+				FECEAC7717DF897900855092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lab1_helloWorld;
+			productName = lab1_helloWorld;
+			productReference = FECEAC7917DF897900855092 /* lab1_helloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FECEAC7117DF897900855092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Justin Richard Powell";
+			};
+			buildConfigurationList = FECEAC7417DF897900855092 /* Build configuration list for PBXProject "lab1_helloWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FECEAC7017DF897900855092;
+			productRefGroup = FECEAC7A17DF897900855092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FECEAC7817DF897900855092 /* lab1_helloWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FECEAC7717DF897900855092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECEAC8717DF897900855092 /* InfoPlist.strings in Resources */,
+				FECEAC8F17DF897900855092 /* Default.png in Resources */,
+				FECEAC9117DF897900855092 /* Default@2x.png in Resources */,
+				FECEAC9317DF897900855092 /* Default-568h@2x.png in Resources */,
+				FECEAC9917DF897900855092 /* MADViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FECEAC7517DF897900855092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECEAC8917DF897900855092 /* main.m in Sources */,
+				FECEAC8D17DF897900855092 /* MADAppDelegate.m in Sources */,
+				FECEAC9617DF897900855092 /* MADViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FECEAC8517DF897900855092 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECEAC8617DF897900855092 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FECEAC9717DF897900855092 /* MADViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECEAC9817DF897900855092 /* en */,
+			);
+			name = MADViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FECEAC9A17DF897900855092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FECEAC9B17DF897900855092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FECEAC9D17DF897900855092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lab1_helloWorld/lab1_helloWorld-Prefix.pch";
+				INFOPLIST_FILE = "lab1_helloWorld/lab1_helloWorld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FECEAC9E17DF897900855092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lab1_helloWorld/lab1_helloWorld-Prefix.pch";
+				INFOPLIST_FILE = "lab1_helloWorld/lab1_helloWorld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FECEAC7417DF897900855092 /* Build configuration list for PBXProject "lab1_helloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECEAC9A17DF897900855092 /* Debug */,
+				FECEAC9B17DF897900855092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECEAC9C17DF897900855092 /* Build configuration list for PBXNativeTarget "lab1_helloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECEAC9D17DF897900855092 /* Debug */,
+				FECEAC9E17DF897900855092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FECEAC7117DF897900855092 /* Project object */;
+}
