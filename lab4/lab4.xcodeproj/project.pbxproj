@@ -7,102 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEFECE8A17E8A8B50094ABAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECE8917E8A8B50094ABAA /* UIKit.framework */; };
-		FEFECE8C17E8A8B50094ABAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECE8B17E8A8B50094ABAA /* Foundation.framework */; };
-		FEFECE8E17E8A8B50094ABAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECE8D17E8A8B50094ABAA /* CoreGraphics.framework */; };
-		FEFECE9417E8A8B50094ABAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFECE9217E8A8B50094ABAA /* InfoPlist.strings */; };
-		FEFECE9617E8A8B60094ABAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECE9517E8A8B60094ABAA /* main.m */; };
-		FEFECE9A17E8A8B60094ABAA /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECE9917E8A8B60094ABAA /* MADAppDelegate.m */; };
-		FEFECE9C17E8A8B60094ABAA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECE9B17E8A8B60094ABAA /* Default.png */; };
-		FEFECE9E17E8A8B60094ABAA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECE9D17E8A8B60094ABAA /* Default@2x.png */; };
-		FEFECEA017E8A8B60094ABAA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECE9F17E8A8B60094ABAA /* Default-568h@2x.png */; };
-		FEFECEA317E8A8B60094ABAA /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECEA217E8A8B60094ABAA /* MADViewController.m */; };
-		FEFECEA617E8A8B60094ABAA /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEA417E8A8B60094ABAA /* MADViewController.xib */; };
+		FEFECEBF17E8ADA60094ABAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECEBE17E8ADA60094ABAA /* UIKit.framework */; };
+		FEFECEC117E8ADA60094ABAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECEC017E8ADA60094ABAA /* Foundation.framework */; };
+		FEFECEC317E8ADA60094ABAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFECEC217E8ADA60094ABAA /* CoreGraphics.framework */; };
+		FEFECEC917E8ADA60094ABAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEC717E8ADA60094ABAA /* InfoPlist.strings */; };
+		FEFECECB17E8ADA60094ABAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECECA17E8ADA60094ABAA /* main.m */; };
+		FEFECECF17E8ADA60094ABAA /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECECE17E8ADA60094ABAA /* MADAppDelegate.m */; };
+		FEFECED117E8ADA60094ABAA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECED017E8ADA60094ABAA /* Default.png */; };
+		FEFECED317E8ADA60094ABAA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECED217E8ADA60094ABAA /* Default@2x.png */; };
+		FEFECED517E8ADA60094ABAA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECED417E8ADA60094ABAA /* Default-568h@2x.png */; };
+		FEFECED817E8ADA60094ABAA /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFECED717E8ADA60094ABAA /* MADViewController.m */; };
+		FEFECEDB17E8ADA60094ABAA /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFECED917E8ADA60094ABAA /* MADViewController.xib */; };
+		FEFECEE617E8ADBE0094ABAA /* Beatles_Abbey_Road_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEE117E8ADBE0094ABAA /* Beatles_Abbey_Road_icon.png */; };
+		FEFECEE717E8ADBE0094ABAA /* Beatles_Abbey_Road_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEE217E8ADBE0094ABAA /* Beatles_Abbey_Road_icon@2x.png */; };
+		FEFECEE817E8ADBE0094ABAA /* Beatles_Abbey_Road.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEE317E8ADBE0094ABAA /* Beatles_Abbey_Road.png */; };
+		FEFECEE917E8ADBE0094ABAA /* beatles1.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEE417E8ADBE0094ABAA /* beatles1.png */; };
+		FEFECEEA17E8ADBE0094ABAA /* beatles2.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEE517E8ADBE0094ABAA /* beatles2.png */; };
+		FEFECEEC17E8ADCD0094ABAA /* Beatles_Abbey_Road_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEEB17E8ADCD0094ABAA /* Beatles_Abbey_Road_icon@2x.png */; };
+		FEFECEEE17E8ADE10094ABAA /* Beatles_Abbey_Road_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFECEED17E8ADE10094ABAA /* Beatles_Abbey_Road_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FEFECE8617E8A8B50094ABAA /* lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab4.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEFECE8917E8A8B50094ABAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FEFECE8B17E8A8B50094ABAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FEFECE8D17E8A8B50094ABAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FEFECE9117E8A8B50094ABAA /* lab4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lab4-Info.plist"; sourceTree = "<group>"; };
-		FEFECE9317E8A8B50094ABAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FEFECE9517E8A8B60094ABAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEFECE9717E8A8B60094ABAA /* lab4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab4-Prefix.pch"; sourceTree = "<group>"; };
-		FEFECE9817E8A8B60094ABAA /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
-		FEFECE9917E8A8B60094ABAA /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
-		FEFECE9B17E8A8B60094ABAA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FEFECE9D17E8A8B60094ABAA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FEFECE9F17E8A8B60094ABAA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FEFECEA117E8A8B60094ABAA /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
-		FEFECEA217E8A8B60094ABAA /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
-		FEFECEA517E8A8B60094ABAA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
+		FEFECEBB17E8ADA60094ABAA /* lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFECEBE17E8ADA60094ABAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEFECEC017E8ADA60094ABAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEFECEC217E8ADA60094ABAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEFECEC617E8ADA60094ABAA /* lab4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lab4-Info.plist"; sourceTree = "<group>"; };
+		FEFECEC817E8ADA60094ABAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFECECA17E8ADA60094ABAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFECECC17E8ADA60094ABAA /* lab4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab4-Prefix.pch"; sourceTree = "<group>"; };
+		FEFECECD17E8ADA60094ABAA /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
+		FEFECECE17E8ADA60094ABAA /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
+		FEFECED017E8ADA60094ABAA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FEFECED217E8ADA60094ABAA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FEFECED417E8ADA60094ABAA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FEFECED617E8ADA60094ABAA /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
+		FEFECED717E8ADA60094ABAA /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
+		FEFECEDA17E8ADA60094ABAA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
+		FEFECEE117E8ADBE0094ABAA /* Beatles_Abbey_Road_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beatles_Abbey_Road_icon.png; sourceTree = "<group>"; };
+		FEFECEE217E8ADBE0094ABAA /* Beatles_Abbey_Road_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Beatles_Abbey_Road_icon@2x.png"; sourceTree = "<group>"; };
+		FEFECEE317E8ADBE0094ABAA /* Beatles_Abbey_Road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beatles_Abbey_Road.png; sourceTree = "<group>"; };
+		FEFECEE417E8ADBE0094ABAA /* beatles1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beatles1.png; sourceTree = "<group>"; };
+		FEFECEE517E8ADBE0094ABAA /* beatles2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beatles2.png; sourceTree = "<group>"; };
+		FEFECEEB17E8ADCD0094ABAA /* Beatles_Abbey_Road_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Beatles_Abbey_Road_icon@2x.png"; sourceTree = "<group>"; };
+		FEFECEED17E8ADE10094ABAA /* Beatles_Abbey_Road_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beatles_Abbey_Road_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FEFECE8317E8A8B50094ABAA /* Frameworks */ = {
+		FEFECEB817E8ADA60094ABAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFECE8A17E8A8B50094ABAA /* UIKit.framework in Frameworks */,
-				FEFECE8C17E8A8B50094ABAA /* Foundation.framework in Frameworks */,
-				FEFECE8E17E8A8B50094ABAA /* CoreGraphics.framework in Frameworks */,
+				FEFECEBF17E8ADA60094ABAA /* UIKit.framework in Frameworks */,
+				FEFECEC117E8ADA60094ABAA /* Foundation.framework in Frameworks */,
+				FEFECEC317E8ADA60094ABAA /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FEFECE7D17E8A8B50094ABAA = {
+		FEFECEB217E8ADA60094ABAA = {
 			isa = PBXGroup;
 			children = (
-				FEFECE8F17E8A8B50094ABAA /* lab4 */,
-				FEFECE8817E8A8B50094ABAA /* Frameworks */,
-				FEFECE8717E8A8B50094ABAA /* Products */,
+				FEFECEED17E8ADE10094ABAA /* Beatles_Abbey_Road_icon.png */,
+				FEFECEEB17E8ADCD0094ABAA /* Beatles_Abbey_Road_icon@2x.png */,
+				FEFECEC417E8ADA60094ABAA /* lab4 */,
+				FEFECEBD17E8ADA60094ABAA /* Frameworks */,
+				FEFECEBC17E8ADA60094ABAA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FEFECE8717E8A8B50094ABAA /* Products */ = {
+		FEFECEBC17E8ADA60094ABAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEFECE8617E8A8B50094ABAA /* lab4.app */,
+				FEFECEBB17E8ADA60094ABAA /* lab4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FEFECE8817E8A8B50094ABAA /* Frameworks */ = {
+		FEFECEBD17E8ADA60094ABAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FEFECE8917E8A8B50094ABAA /* UIKit.framework */,
-				FEFECE8B17E8A8B50094ABAA /* Foundation.framework */,
-				FEFECE8D17E8A8B50094ABAA /* CoreGraphics.framework */,
+				FEFECEBE17E8ADA60094ABAA /* UIKit.framework */,
+				FEFECEC017E8ADA60094ABAA /* Foundation.framework */,
+				FEFECEC217E8ADA60094ABAA /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FEFECE8F17E8A8B50094ABAA /* lab4 */ = {
+		FEFECEC417E8ADA60094ABAA /* lab4 */ = {
 			isa = PBXGroup;
 			children = (
-				FEFECE9817E8A8B60094ABAA /* MADAppDelegate.h */,
-				FEFECE9917E8A8B60094ABAA /* MADAppDelegate.m */,
-				FEFECEA117E8A8B60094ABAA /* MADViewController.h */,
-				FEFECEA217E8A8B60094ABAA /* MADViewController.m */,
-				FEFECEA417E8A8B60094ABAA /* MADViewController.xib */,
-				FEFECE9017E8A8B50094ABAA /* Supporting Files */,
+				FEFECECD17E8ADA60094ABAA /* MADAppDelegate.h */,
+				FEFECECE17E8ADA60094ABAA /* MADAppDelegate.m */,
+				FEFECED617E8ADA60094ABAA /* MADViewController.h */,
+				FEFECED717E8ADA60094ABAA /* MADViewController.m */,
+				FEFECED917E8ADA60094ABAA /* MADViewController.xib */,
+				FEFECEC517E8ADA60094ABAA /* Supporting Files */,
 			);
 			path = lab4;
 			sourceTree = "<group>";
 		};
-		FEFECE9017E8A8B50094ABAA /* Supporting Files */ = {
+		FEFECEC517E8ADA60094ABAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEFECE9117E8A8B50094ABAA /* lab4-Info.plist */,
-				FEFECE9217E8A8B50094ABAA /* InfoPlist.strings */,
-				FEFECE9517E8A8B60094ABAA /* main.m */,
-				FEFECE9717E8A8B60094ABAA /* lab4-Prefix.pch */,
-				FEFECE9B17E8A8B60094ABAA /* Default.png */,
-				FEFECE9D17E8A8B60094ABAA /* Default@2x.png */,
-				FEFECE9F17E8A8B60094ABAA /* Default-568h@2x.png */,
+				FEFECEC617E8ADA60094ABAA /* lab4-Info.plist */,
+				FEFECEC717E8ADA60094ABAA /* InfoPlist.strings */,
+				FEFECECA17E8ADA60094ABAA /* main.m */,
+				FEFECECC17E8ADA60094ABAA /* lab4-Prefix.pch */,
+				FEFECEE117E8ADBE0094ABAA /* Beatles_Abbey_Road_icon.png */,
+				FEFECEE217E8ADBE0094ABAA /* Beatles_Abbey_Road_icon@2x.png */,
+				FEFECEE317E8ADBE0094ABAA /* Beatles_Abbey_Road.png */,
+				FEFECEE417E8ADBE0094ABAA /* beatles1.png */,
+				FEFECEE517E8ADBE0094ABAA /* beatles2.png */,
+				FEFECED017E8ADA60094ABAA /* Default.png */,
+				FEFECED217E8ADA60094ABAA /* Default@2x.png */,
+				FEFECED417E8ADA60094ABAA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FEFECE8517E8A8B50094ABAA /* lab4 */ = {
+		FEFECEBA17E8ADA60094ABAA /* lab4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEFECEA917E8A8B60094ABAA /* Build configuration list for PBXNativeTarget "lab4" */;
+			buildConfigurationList = FEFECEDE17E8ADA60094ABAA /* Build configuration list for PBXNativeTarget "lab4" */;
 			buildPhases = (
-				FEFECE8217E8A8B50094ABAA /* Sources */,
-				FEFECE8317E8A8B50094ABAA /* Frameworks */,
-				FEFECE8417E8A8B50094ABAA /* Resources */,
+				FEFECEB717E8ADA60094ABAA /* Sources */,
+				FEFECEB817E8ADA60094ABAA /* Frameworks */,
+				FEFECEB917E8ADA60094ABAA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -124,77 +145,84 @@
 			);
 			name = lab4;
 			productName = lab4;
-			productReference = FEFECE8617E8A8B50094ABAA /* lab4.app */;
+			productReference = FEFECEBB17E8ADA60094ABAA /* lab4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FEFECE7E17E8A8B50094ABAA /* Project object */ = {
+		FEFECEB317E8ADA60094ABAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MAD;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Justin Richard Powell";
 			};
-			buildConfigurationList = FEFECE8117E8A8B50094ABAA /* Build configuration list for PBXProject "lab4" */;
+			buildConfigurationList = FEFECEB617E8ADA60094ABAA /* Build configuration list for PBXProject "lab4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FEFECE7D17E8A8B50094ABAA;
-			productRefGroup = FEFECE8717E8A8B50094ABAA /* Products */;
+			mainGroup = FEFECEB217E8ADA60094ABAA;
+			productRefGroup = FEFECEBC17E8ADA60094ABAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FEFECE8517E8A8B50094ABAA /* lab4 */,
+				FEFECEBA17E8ADA60094ABAA /* lab4 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FEFECE8417E8A8B50094ABAA /* Resources */ = {
+		FEFECEB917E8ADA60094ABAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFECE9417E8A8B50094ABAA /* InfoPlist.strings in Resources */,
-				FEFECE9C17E8A8B60094ABAA /* Default.png in Resources */,
-				FEFECE9E17E8A8B60094ABAA /* Default@2x.png in Resources */,
-				FEFECEA017E8A8B60094ABAA /* Default-568h@2x.png in Resources */,
-				FEFECEA617E8A8B60094ABAA /* MADViewController.xib in Resources */,
+				FEFECEC917E8ADA60094ABAA /* InfoPlist.strings in Resources */,
+				FEFECED117E8ADA60094ABAA /* Default.png in Resources */,
+				FEFECED317E8ADA60094ABAA /* Default@2x.png in Resources */,
+				FEFECED517E8ADA60094ABAA /* Default-568h@2x.png in Resources */,
+				FEFECEDB17E8ADA60094ABAA /* MADViewController.xib in Resources */,
+				FEFECEE617E8ADBE0094ABAA /* Beatles_Abbey_Road_icon.png in Resources */,
+				FEFECEE717E8ADBE0094ABAA /* Beatles_Abbey_Road_icon@2x.png in Resources */,
+				FEFECEE817E8ADBE0094ABAA /* Beatles_Abbey_Road.png in Resources */,
+				FEFECEE917E8ADBE0094ABAA /* beatles1.png in Resources */,
+				FEFECEEA17E8ADBE0094ABAA /* beatles2.png in Resources */,
+				FEFECEEC17E8ADCD0094ABAA /* Beatles_Abbey_Road_icon@2x.png in Resources */,
+				FEFECEEE17E8ADE10094ABAA /* Beatles_Abbey_Road_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FEFECE8217E8A8B50094ABAA /* Sources */ = {
+		FEFECEB717E8ADA60094ABAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFECE9617E8A8B60094ABAA /* main.m in Sources */,
-				FEFECE9A17E8A8B60094ABAA /* MADAppDelegate.m in Sources */,
-				FEFECEA317E8A8B60094ABAA /* MADViewController.m in Sources */,
+				FEFECECB17E8ADA60094ABAA /* main.m in Sources */,
+				FEFECECF17E8ADA60094ABAA /* MADAppDelegate.m in Sources */,
+				FEFECED817E8ADA60094ABAA /* MADViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FEFECE9217E8A8B50094ABAA /* InfoPlist.strings */ = {
+		FEFECEC717E8ADA60094ABAA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FEFECE9317E8A8B50094ABAA /* en */,
+				FEFECEC817E8ADA60094ABAA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FEFECEA417E8A8B60094ABAA /* MADViewController.xib */ = {
+		FEFECED917E8ADA60094ABAA /* MADViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FEFECEA517E8A8B60094ABAA /* en */,
+				FEFECEDA17E8ADA60094ABAA /* en */,
 			);
 			name = MADViewController.xib;
 			sourceTree = "<group>";
@@ -202,7 +230,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FEFECEA717E8A8B60094ABAA /* Debug */ = {
+		FEFECEDC17E8ADA60094ABAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,11 +258,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		FEFECEA817E8A8B60094ABAA /* Release */ = {
+		FEFECEDD17E8ADA60094ABAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,12 +282,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FEFECEAA17E8A8B60094ABAA /* Debug */ = {
+		FEFECEDF17E8ADA60094ABAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -271,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		FEFECEAB17E8A8B60094ABAA /* Release */ = {
+		FEFECEE017E8ADA60094ABAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -285,24 +311,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FEFECE8117E8A8B50094ABAA /* Build configuration list for PBXProject "lab4" */ = {
+		FEFECEB617E8ADA60094ABAA /* Build configuration list for PBXProject "lab4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEFECEA717E8A8B60094ABAA /* Debug */,
-				FEFECEA817E8A8B60094ABAA /* Release */,
+				FEFECEDC17E8ADA60094ABAA /* Debug */,
+				FEFECEDD17E8ADA60094ABAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEFECEA917E8A8B60094ABAA /* Build configuration list for PBXNativeTarget "lab4" */ = {
+		FEFECEDE17E8ADA60094ABAA /* Build configuration list for PBXNativeTarget "lab4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEFECEAA17E8A8B60094ABAA /* Debug */,
-				FEFECEAB17E8A8B60094ABAA /* Release */,
+				FEFECEDF17E8ADA60094ABAA /* Debug */,
+				FEFECEE017E8ADA60094ABAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FEFECE7E17E8A8B50094ABAA /* Project object */;
+	rootObject = FEFECEB317E8ADA60094ABAA /* Project object */;
 }
