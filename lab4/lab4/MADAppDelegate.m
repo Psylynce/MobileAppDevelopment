@@ -37,6 +37,10 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    self.viewController.titleLabel.text = @"The Beatles";
+    self.viewController.beatlesImage.image = [UIImage imageNamed:@"Beatles_Abbey_Road.png"];
+    self.viewController.imageControl.selectedSegmentIndex = -1;
+    self.viewController.capitalizeSwitch.on = false;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

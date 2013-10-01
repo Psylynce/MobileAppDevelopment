@@ -18,8 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *convertTo;
 - (IBAction)convertToPressed:(UIButton *)sender;
 
-//NSDictionary *values = @{@"m": @1.0};
-
 @property (weak, nonatomic) IBOutlet UITextField *userNumber;
 - (IBAction)convert:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *convertedNum;

@@ -170,16 +170,32 @@ NSDictionary *values = nil;
     }
 }
 
-- (IBAction)convert:(UIButton *)sender {
-    if(![_userNumber.text floatValue]){
+-(BOOL)validUserInput{
+    if (![_userNumber.text floatValue]) {
         _convertedNum.text = @"You can't convert words silly.";
-    }else{
+        return false;
+    }
+    else if ([_unitChoiceButton.currentTitle isEqualToString:@"Choose Units"]) {
+        _convertedNum.text = @"You need to choose some type of unit to convert.";
+        return false;
+    }
+    else if ([_convertFrom.currentTitle isEqualToString:@"Units"] || [_convertTo.currentTitle isEqualToString:@"Units"]){
+        _convertedNum.text = @"You need to choose units to convert!";
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+- (IBAction)convert:(UIButton *)sender {
+//    if(validUserInput){
         float num = [_userNumber.text floatValue];
         float conversionFromNum = [[values objectForKey:_convertFrom.currentTitle] floatValue ];
         float newNum = num * conversionFromNum;
         float final =  newNum / [[values objectForKey:_convertTo.currentTitle] floatValue];
-        _convertedNum.text = [NSString stringWithFormat:@"%f", final];
-    }
+        _convertedNum.text = [NSMutableString stringWithFormat:@"%f %@ = %f %@", num, _convertFrom.currentTitle, final, _convertTo.currentTitle];
+//    }
 }
 
 @end
