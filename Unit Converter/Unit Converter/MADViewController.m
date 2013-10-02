@@ -77,7 +77,7 @@
         _to.frame = CGRectMake(680, 150, 50, 50);
         _convertTo.frame = CGRectMake(760, 150, 200, 50);
         _convertedNum.frame = CGRectMake(85, 300, 900, 50);        
-        _background1.frame = CGRectMake(0, 375, _background1.frame.size.width, 900);
+        _background1.frame = CGRectMake(0, 375, 1500, 900);
     }
 }
 
