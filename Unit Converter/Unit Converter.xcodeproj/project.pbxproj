@@ -19,6 +19,8 @@
 		5C0FF17E17F6284500C1829A /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FF17D17F6284500C1829A /* MADViewController.m */; };
 		5C0FF18117F6284500C1829A /* MADViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FF17F17F6284500C1829A /* MADViewController_iPhone.xib */; };
 		5C0FF18417F6284500C1829A /* MADViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FF18217F6284500C1829A /* MADViewController_iPad.xib */; };
+		5C0FF1BA17FD0FBE00C1829A /* convert144.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FF1B917FD0FBE00C1829A /* convert144.png */; };
+		5C0FF1BC17FD104200C1829A /* convert72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FF1BB17FD104200C1829A /* convert72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		5C0FF17D17F6284500C1829A /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
 		5C0FF18017F6284500C1829A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController_iPhone.xib; sourceTree = "<group>"; };
 		5C0FF18317F6284500C1829A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController_iPad.xib; sourceTree = "<group>"; };
+		5C0FF1B917FD0FBE00C1829A /* convert144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convert144.png; sourceTree = "<group>"; };
+		5C0FF1BB17FD104200C1829A /* convert72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convert72.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		5C0FF15817F6284500C1829A = {
 			isa = PBXGroup;
 			children = (
+				5C0FF1BB17FD104200C1829A /* convert72.png */,
+				5C0FF1B917FD0FBE00C1829A /* convert144.png */,
 				5C0FF16A17F6284500C1829A /* Unit Converter */,
 				5C0FF16317F6284500C1829A /* Frameworks */,
 				5C0FF16217F6284500C1829A /* Products */,
@@ -168,6 +174,8 @@
 				5C0FF17B17F6284500C1829A /* Default-568h@2x.png in Resources */,
 				5C0FF18117F6284500C1829A /* MADViewController_iPhone.xib in Resources */,
 				5C0FF18417F6284500C1829A /* MADViewController_iPad.xib in Resources */,
+				5C0FF1BA17FD0FBE00C1829A /* convert144.png in Resources */,
+				5C0FF1BC17FD104200C1829A /* convert72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,7 @@
 				INFOPLIST_FILE = "Unit Converter/Unit Converter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -292,6 +301,7 @@
 				INFOPLIST_FILE = "Unit Converter/Unit Converter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
