@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MADSecondViewController : UIViewController
+<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *userEmail;
+@property (weak, nonatomic) IBOutlet UITextView *userMessage;
+- (IBAction)submitForm:(UIButton *)sender;
 
 @end
