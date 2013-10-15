@@ -7,6 +7,8 @@
 //
 
 #import "Scene2ViewController.h"
+#import "MADViewController.h"
+#import "Favorite.h"
 
 @interface Scene2ViewController ()
 
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _userInfo = [[Favorite alloc]init];
     _userMovie.delegate = self;
     _userActor.delegate = self;
 }
