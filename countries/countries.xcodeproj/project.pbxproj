@@ -20,6 +20,8 @@
 		5CCD69841819728400430D8A /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCD69831819728400430D8A /* MADViewController.m */; };
 		5CCD698B1819749200430D8A /* continents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CCD698A1819749200430D8A /* continents.plist */; };
 		5CCD698E1819787500430D8A /* MADDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCD698D1819787500430D8A /* MADDetailViewController.m */; };
+		5CCD69911820078A00430D8A /* MADCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCD69901820078A00430D8A /* MADCountryViewController.m */; };
+		5CCD6997182023A400430D8A /* MADInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCD6996182023A400430D8A /* MADInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		5CCD698A1819749200430D8A /* continents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = continents.plist; sourceTree = "<group>"; };
 		5CCD698C1819787500430D8A /* MADDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDetailViewController.h; sourceTree = "<group>"; };
 		5CCD698D1819787500430D8A /* MADDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDetailViewController.m; sourceTree = "<group>"; };
+		5CCD698F1820078A00430D8A /* MADCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADCountryViewController.h; sourceTree = "<group>"; };
+		5CCD69901820078A00430D8A /* MADCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADCountryViewController.m; sourceTree = "<group>"; };
+		5CCD6995182023A400430D8A /* MADInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADInfoViewController.h; sourceTree = "<group>"; };
+		5CCD6996182023A400430D8A /* MADInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 				5CCD69761819728400430D8A /* MADAppDelegate.h */,
 				5CCD69771819728400430D8A /* MADAppDelegate.m */,
 				5CCD697F1819728400430D8A /* MainStoryboard.storyboard */,
+				5CCD6995182023A400430D8A /* MADInfoViewController.h */,
+				5CCD6996182023A400430D8A /* MADInfoViewController.m */,
+				5CCD698F1820078A00430D8A /* MADCountryViewController.h */,
+				5CCD69901820078A00430D8A /* MADCountryViewController.m */,
 				5CCD698C1819787500430D8A /* MADDetailViewController.h */,
 				5CCD698D1819787500430D8A /* MADDetailViewController.m */,
 				5CCD69821819728400430D8A /* MADViewController.h */,
@@ -187,6 +197,8 @@
 				5CCD69781819728400430D8A /* MADAppDelegate.m in Sources */,
 				5CCD69841819728400430D8A /* MADViewController.m in Sources */,
 				5CCD698E1819787500430D8A /* MADDetailViewController.m in Sources */,
+				5CCD69911820078A00430D8A /* MADCountryViewController.m in Sources */,
+				5CCD6997182023A400430D8A /* MADInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +321,7 @@
 				5CCD69891819728400430D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

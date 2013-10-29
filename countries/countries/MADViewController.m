@@ -8,6 +8,7 @@
 
 #import "MADViewController.h"
 #import "MADDetailViewController.h"
+#import "MADInfoViewController.h"
 
 @interface MADViewController (){
     NSMutableDictionary *continentData;
@@ -44,12 +45,19 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"countrySeque"]){
+    if([segue.identifier isEqualToString:@"countrySegue"]){
         MADDetailViewController *detailViewController = segue.destinationViewController;
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         NSArray *rowData = [continentData allKeys];
         detailViewController.title = [rowData objectAtIndex:indexPath.row];
         detailViewController.countryList = [continentData objectForKey:detailViewController.title];
+    }
+    if([segue.identifier isEqualToString:@"continentSegue"]){
+        MADInfoViewController *infoViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSArray *rowData = [continentData allKeys];
+        infoViewController.name = [rowData objectAtIndex:indexPath.row];
+        infoViewController.number = [NSString stringWithFormat:@"%d", [[continentData objectForKey:infoViewController.name]count]];
     }
 }
 
