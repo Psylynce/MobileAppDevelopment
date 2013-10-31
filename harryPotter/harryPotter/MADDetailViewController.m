@@ -37,9 +37,8 @@
     NSURL *url = [NSURL URLWithString:_detailItem];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if(self.detailItem){
+        self.detailDescriptionLabel.text = @"";
     }
 }
 
