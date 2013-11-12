@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _webView.delegate = self;
     [self loadPageWithString:_urlPath];
 }
 
@@ -37,7 +38,14 @@
 }
 
 -(void)loadPageWithString:(NSString *)urlString{
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://en.wikipedia.org/wiki/%@",urlString]]]];
+    if ([urlString isEqualToString:@"Boulder"]) {
+        NSString *boulderString = @"Boulder,_Colorado";
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://en.wikipedia.org/wiki/%@", boulderString]]]];
+    }
+    else{
+        NSString *newURL = [_urlPath stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://en.wikipedia.org/wiki/%@", newURL]]]];
+    }
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView{
@@ -46,6 +54,11 @@
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     [_spinner stopAnimating];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error Loading Web Page." message:[error localizedDescription] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+    [alert show];
 }
 
 @end

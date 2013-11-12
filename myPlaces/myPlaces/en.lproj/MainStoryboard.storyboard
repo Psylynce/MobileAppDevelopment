@@ -19,24 +19,101 @@
             </objects>
             <point key="canvasLocation" x="18" y="29"/>
         </scene>
-        <!--View Controller - About this App-->
+        <!--View Controller - About-->
         <scene sceneID="UPr-Rc-hWX">
             <objects>
                 <viewController id="pfl-XL-WWN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9V-Wf-bqL">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About this app." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T19-Vx-CPd">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This app tracks the cities you have visited thoughout your lifetime!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-A2-3fM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="qok-TB-n3P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UWa-Ba-sUB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="JEv-A8-mGP"/>
+                                </constraints>
+                                <string key="text">To track the cities you have visited simply search for them in the search bar on the main page. No need to include the state, just type the citiy's name!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-ID-G4s">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="0qL-rN-pna"/>
+                                </constraints>
+                                <string key="text">Hold your finger on the map over the city that you searched for and the app will mark it and save it for you! You can then tap the places button to see all the places you've visited! Tap on a certain place to get more info about it.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Example: Don't search Denver, CO" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="LNR-Nd-NEb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="G9x-1b-l9L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Just search Denver. " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-0l-RrJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="OyO-N8-G4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Have fun!" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="NkW-K1-UpU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="7mc-Zi-AIs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UWa-Ba-sUB" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="18O-6b-U1c"/>
+                            <constraint firstAttribute="trailing" secondItem="sMW-ID-G4s" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="41I-T3-7xT"/>
+                            <constraint firstItem="LNR-Nd-NEb" firstAttribute="top" secondItem="UWa-Ba-sUB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="G9c-Ks-Imq"/>
+                            <constraint firstItem="Q5d-0l-RrJ" firstAttribute="top" secondItem="LNR-Nd-NEb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HzB-sx-qkk"/>
+                            <constraint firstAttribute="trailing" secondItem="UWa-Ba-sUB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Jdu-3x-arz"/>
+                            <constraint firstItem="T19-Vx-CPd" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NKT-0n-RYX"/>
+                            <constraint firstItem="NkW-K1-UpU" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qfc-aS-d1S"/>
+                            <constraint firstItem="NkW-K1-UpU" firstAttribute="top" secondItem="sMW-ID-G4s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Qh6-wj-tiE"/>
+                            <constraint firstItem="bBe-A2-3fM" firstAttribute="top" secondItem="T19-Vx-CPd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Qro-D5-fP7"/>
+                            <constraint firstAttribute="trailing" secondItem="LNR-Nd-NEb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Xib-LQ-mU9"/>
+                            <constraint firstItem="Q5d-0l-RrJ" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hEy-cW-6vf"/>
+                            <constraint firstItem="bBe-A2-3fM" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hQr-8X-2TQ"/>
+                            <constraint firstItem="sMW-ID-G4s" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iQh-gX-9yL"/>
+                            <constraint firstAttribute="trailing" secondItem="Q5d-0l-RrJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="l5E-RC-FJw"/>
+                            <constraint firstItem="LNR-Nd-NEb" firstAttribute="leading" secondItem="H9V-Wf-bqL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qUL-2S-N0U"/>
+                            <constraint firstAttribute="trailing" secondItem="NkW-K1-UpU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rjR-iQ-2KG"/>
+                            <constraint firstAttribute="trailing" secondItem="bBe-A2-3fM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sm2-ec-NB7"/>
+                            <constraint firstItem="UWa-Ba-sUB" firstAttribute="top" secondItem="bBe-A2-3fM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vBl-gK-UR5"/>
+                            <constraint firstItem="T19-Vx-CPd" firstAttribute="top" secondItem="H9V-Wf-bqL" secondAttribute="top" constant="20" symbolic="YES" type="default" id="w2q-Rl-xeg"/>
+                            <constraint firstItem="sMW-ID-G4s" firstAttribute="top" secondItem="Q5d-0l-RrJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wHp-id-Ekl"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About this App" id="sbl-4l-mTk">
-                        <barButtonItem key="leftBarButtonItem" title="Map" id="tdL-BI-CgV"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="About" id="sbl-4l-mTk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAR-jF-efD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034" y="-604"/>
         </scene>
-        <!--View Controller - My Places-->
+        <!--View Controller - My Places Map-->
         <scene sceneID="hzH-OK-tvV">
             <objects>
                 <viewController id="JUU-Td-QzQ" customClass="MADViewController" sceneMemberID="viewController">
@@ -60,7 +137,7 @@
                             <constraint firstItem="Wdq-iK-ofu" firstAttribute="leading" secondItem="E8a-df-Z9F" secondAttribute="leading" type="default" id="vka-9N-0Rc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Places" id="Sun-eJ-i51">
+                    <navigationItem key="navigationItem" title="My Places Map" id="Sun-eJ-i51">
                         <barButtonItem key="leftBarButtonItem" title="About" id="PvE-JU-k2F">
                             <connections>
                                 <segue destination="pfl-XL-WWN" kind="push" id="gvh-vq-D4v"/>
@@ -108,9 +185,7 @@
                             <outlet property="delegate" destination="03T-Gd-AkF" id="0DM-pf-txV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="t1z-X1-csX">
-                        <barButtonItem key="leftBarButtonItem" title="Map" id="VsS-iN-SrF"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="t1z-X1-csX"/>
                     <connections>
                         <outlet property="tableView" destination="Whn-gu-hhP" id="KpK-vw-9bT"/>
                     </connections>
@@ -130,23 +205,21 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIu-oC-j3D">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="67s-TL-0WJ"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="90R-ui-iTQ"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="67s-TL-0WJ" firstAttribute="centerY" secondItem="BIu-oC-j3D" secondAttribute="centerY" type="default" id="39F-1o-YS9"/>
                             <constraint firstItem="BIu-oC-j3D" firstAttribute="bottom" secondItem="xRf-dr-0ug" secondAttribute="bottom" type="default" id="43P-yD-oyI"/>
                             <constraint firstItem="BIu-oC-j3D" firstAttribute="trailing" secondItem="xRf-dr-0ug" secondAttribute="trailing" type="default" id="AhY-cI-rUO"/>
                             <constraint firstItem="BIu-oC-j3D" firstAttribute="top" secondItem="xRf-dr-0ug" secondAttribute="top" type="default" id="DUG-De-g5f"/>
-                            <constraint firstItem="67s-TL-0WJ" firstAttribute="centerX" secondItem="BIu-oC-j3D" secondAttribute="centerX" type="default" id="DhY-K9-NDy"/>
+                            <constraint firstItem="90R-ui-iTQ" firstAttribute="centerY" secondItem="BIu-oC-j3D" secondAttribute="centerY" type="default" id="Qlb-1B-hOj"/>
+                            <constraint firstItem="90R-ui-iTQ" firstAttribute="centerX" secondItem="BIu-oC-j3D" secondAttribute="centerX" type="default" id="ZBA-V1-DcC"/>
                             <constraint firstItem="BIu-oC-j3D" firstAttribute="leading" secondItem="xRf-dr-0ug" secondAttribute="leading" type="default" id="l2M-6a-ajf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3ju-C6-IYG">
-                        <barButtonItem key="leftBarButtonItem" title="Places" id="tWt-1t-w8L"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="3ju-C6-IYG"/>
                     <connections>
-                        <outlet property="spinner" destination="67s-TL-0WJ" id="pmb-d6-K6a"/>
+                        <outlet property="spinner" destination="90R-ui-iTQ" id="O4q-Il-riP"/>
                         <outlet property="webView" destination="BIu-oC-j3D" id="etk-0z-XKL"/>
                     </connections>
                 </viewController>

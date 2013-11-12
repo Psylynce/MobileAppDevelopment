@@ -24,6 +24,8 @@
 		5C14C6C5182FF78C004E6579 /* MADWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C14C6C4182FF78C004E6579 /* MADWebViewController.m */; };
 		5C14C6C8182FFEDF004E6579 /* MADAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C14C6C7182FFEDF004E6579 /* MADAboutViewController.m */; };
 		5C14C6CB1830001F004E6579 /* MADAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C14C6CA1830001F004E6579 /* MADAnnotation.m */; };
+		5C14C6D11831A85F004E6579 /* my57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C14C6D01831A85F004E6579 /* my57.png */; };
+		5C14C6D31831A872004E6579 /* my114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C14C6D21831A872004E6579 /* my114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		5C14C6C7182FFEDF004E6579 /* MADAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAboutViewController.m; sourceTree = "<group>"; };
 		5C14C6C91830001F004E6579 /* MADAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnnotation.h; sourceTree = "<group>"; };
 		5C14C6CA1830001F004E6579 /* MADAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAnnotation.m; sourceTree = "<group>"; };
+		5C14C6D01831A85F004E6579 /* my57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my57.png; sourceTree = "<group>"; };
+		5C14C6D21831A872004E6579 /* my114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		5C14C6A0182FF3A8004E6579 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C14C6D01831A85F004E6579 /* my57.png */,
+				5C14C6D21831A872004E6579 /* my114.png */,
 				5C14C6A1182FF3A8004E6579 /* myPlaces-Info.plist */,
 				5C14C6A2182FF3A8004E6579 /* InfoPlist.strings */,
 				5C14C6A5182FF3A8004E6579 /* main.m */,
@@ -192,6 +198,8 @@
 				5C14C6AE182FF3A8004E6579 /* Default@2x.png in Resources */,
 				5C14C6B0182FF3A8004E6579 /* Default-568h@2x.png in Resources */,
 				5C14C6B3182FF3A8004E6579 /* MainStoryboard.storyboard in Resources */,
+				5C14C6D11831A85F004E6579 /* my57.png in Resources */,
+				5C14C6D31831A872004E6579 /* my114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
