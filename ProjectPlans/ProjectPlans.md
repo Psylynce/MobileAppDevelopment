@@ -44,3 +44,46 @@ This will be the basic layout for the map view with the pins on the map. The pop
 **Test**
 
 To test this I will be entering in data that should not exist on a map, such as just numbers that aren't lattitude or longitude, I may let the user enter those if they wish. I will also make sure the right wiki pages are assigned to the correct pins. 
+<br><br>
+
+Project 3 Plan
+==============
+###Pong
+
+**Overview**
+
+I will be building an app that lets a user play against a computer in a game of Pong. It will be basically like the original game. I will implement the paddles, the ball and the scoreboard in the app. The frameworks I will use will be Cocos2d and Box2d. These two frameworks should provide me with the tools I need to complete this game.
+
+**Pseudocode** 
+
+```objective-c
+	@interface Paddle : NSObject <CCTargetedTouchDelegate> {
+		b2World *World;
+		b2Body *Body;
+		CCSprite *Sprite;
+		b2Fixture *Fixture;
+		b2MouseJoint *_mouseJoint;
+		CGRect _touchArea;
+	}
+	@interface Ball : NSObject  {
+		CGSize _winSize;
+		CGSprite *Sprite;
+		b2Body *Body;
+		b2Fixture *Fixture;
+	}
+	@propertiey(readonly, assign) CGSprite *Sprite;
+	@propertiey(readonly, assign) b2Body *Body;
+	@propertiey(readonly, assign) b2Fixture *Fixture;
+```
+
+I will also be creating other properties and functions for whatever I need, this is just a start. 
+
+**Visual Reference**
+
+It will look similar to this.
+
+![App View 1](http://blogs.msdn.com/cfs-filesystemfile.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-01-11-92/7674.Pong.jpg)
+
+**Testing**
+
+To test I will create the paddles and make sure that the user can move the user paddle. Then I will add the ball and make sure that Box2d will create a world in which it will interact. I will make sure the ball resets in the same spot every time and will hit the top and bottom of the screen and exit on the sides. Once I have all that done I will implement scoring and make sure that it works correctly, once the game is won it should display a message with a reset button so that the user can play again.
