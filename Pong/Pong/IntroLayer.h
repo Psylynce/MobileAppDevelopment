@@ -2,7 +2,7 @@
 //  IntroLayer.h
 //  Pong
 //
-//  Created by Justin Powell on 12/8/13.
+//  Created by Justin Powell on 12/12/13.
 //  Copyright Justin Powell 2013. All rights reserved.
 //
 
