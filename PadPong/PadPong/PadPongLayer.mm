@@ -5,6 +5,7 @@
 //  Created by Justin Powell on 12/13/13.
 //
 //
+// Pixel to Meter ratio for box2d
 #define PTM_RATIO 32
 
 #import "cocos2d.h"
@@ -16,21 +17,19 @@
 @implementation PadPongLayer
 
 + (id)scene {
-    
     CCScene *scene = [CCScene node];
     PadPongLayer *layer = [PadPongLayer node];
     [scene addChild:layer];
     return scene;
-    
 }
 
+// starting force is a vector (x,y)
 + (b2Vec2) getStartingForce{
     return b2Vec2(10,10);
 }
 
 
 - (id)init {
-    
     if ((self=[super init])) {
         winSize = [CCDirector sharedDirector].winSize;
         
@@ -45,38 +44,9 @@
         [[[CCDirector sharedDirector] openGLView] setMultipleTouchEnabled:YES];
         
         self.isTouchEnabled = YES;
-        
-        _debugDraw = new GLESDebugDraw(PTM_RATIO);
-        uint32 flags = 0;
-        flags += 1        * b2DebugDraw::e_shapeBit;
-        flags += 1        * b2DebugDraw::e_jointBit;
-        flags += 1        * b2DebugDraw::e_aabbBit;
-        flags += 1        * b2DebugDraw::e_pairBit;
-        flags += 1        * b2DebugDraw::e_centerOfMassBit;
-        _debugDraw->SetFlags(flags);
-        _world->SetDebugDraw(_debugDraw);
     }
     return self;
 }
-
-#ifdef DRAW_DEBUG_INFO
--(void)draw{
-    [super draw];
-    
-    glDisable(GL_TEXTURE_2D);
-    glDisableClientState(GL_COLOR_ARRAY);
-    glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-    glEnableClientState(GL_VERTEX_ARRAY);
-    
-    _world->DrawDebugData();
-    
-    // restore default GL states
-    glEnable(GL_TEXTURE_2D);
-    glEnableClientState(GL_COLOR_ARRAY);
-    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-    glDisableClientState(GL_VERTEX_ARRAY);
-}
-#endif
 
 -(void)addBackground{
     CCSprite* lineSprite = [CCSprite spriteWithFile:@"line.png" rect:CGRectMake(0,0, 5, winSize.height*2)];
@@ -96,7 +66,6 @@
 }
 
 - (void)setupGroundBody {
-    
     // Create edges around the entire screen
     b2BodyDef groundBodyDef;
     groundBodyDef.position.Set(0,0);
@@ -107,11 +76,11 @@
     groundBoxDef.shape = &groundBox;
     groundBoxDef.friction = 0.0f;
     
-    // top wall.
+    // top wall
     groundBox.SetAsEdge(b2Vec2(0,0), b2Vec2(winSize.width/PTM_RATIO, 0));
     _bottomFixture = _groundBody->CreateFixture(&groundBoxDef);
     
-    // bottom wall.
+    // bottom wall
     groundBox.SetAsEdge(b2Vec2(0, winSize.height/PTM_RATIO), b2Vec2(winSize.width/PTM_RATIO, winSize.height/PTM_RATIO));
     _groundBody->CreateFixture(&groundBoxDef);
 }
@@ -166,12 +135,7 @@
         CCSprite *sprite = (CCSprite *)b->GetUserData();
         
         if(sprite != NULL) {
-            sprite.position = ccp(b->GetPosition().x * PTM_RATIO,
-                                  b->GetPosition().y * PTM_RATIO);
-            
-            // Do not update visual angle
-            // Since we have a squal ball.
-            // sprite.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+            sprite.position = ccp(b->GetPosition().x * PTM_RATIO, b->GetPosition().y * PTM_RATIO);
         }
     }
 }

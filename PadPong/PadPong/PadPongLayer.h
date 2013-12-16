@@ -29,7 +29,6 @@
     CCLabelTTF *_rightScoreLabel;
     
     CGSize winSize;
-    GLESDebugDraw *_debugDraw;
 }
 
 + (id) scene;

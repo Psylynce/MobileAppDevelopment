@@ -66,7 +66,6 @@
     
     // Calculate the world location.
     CGPoint location = [touch locationInView:[touch view]];
-    CCLOG(@"BEGAN location is %.2f x %.2f", location.x,location.y);
     location = [[CCDirector sharedDirector] convertToGL:location];
     b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
     
@@ -75,21 +74,19 @@
     // Sidenote: there is one touch area for every paddle.
     touched = CGRectContainsPoint(_touchArea, location);
     
-    CCLOG(@"Touch inside touch area: %d", touched);
-    
     if (touched) {
         // Since there is a hit.
         // Create a mouse joint that
         // allows us to attrack the padde
         // to a certain point.
-        b2MouseJointDef md;
-        md.bodyA = Ground;
-        md.bodyB = Body;
-        md.target = locationWorld;
-        md.collideConnected = true;
-        md.maxForce = 3000 * Body->GetMass();
+        b2MouseJointDef jointDef;
+        jointDef.bodyA = Ground;
+        jointDef.bodyB = Body;
+        jointDef.target = locationWorld;
+        jointDef.collideConnected = true;
+        jointDef.maxForce = 3000 * Body->GetMass();
         
-        _mouseJoint = (b2MouseJoint *)World->CreateJoint(&md);
+        _mouseJoint = (b2MouseJoint *)World->CreateJoint(&jointDef);
         Body->SetAwake(true);
     }
     
@@ -97,16 +94,12 @@
 }
 
 -(void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
-    
-    // When the is no joint, ignore touch moves.
     if (_mouseJoint == NULL) return;
     
-    // Get world location.
+    // location.
     CGPoint location = [touch locationInView:[touch view]];
     location = [[CCDirector sharedDirector] convertToGL:location];
     b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
-    
-    CCLOG(@"MOVED location is %.2f x %.2f", locationWorld.x, locationWorld.y);
     
     // Set the target of the joint to the world location.
     // This makes the paddle move to that point.
