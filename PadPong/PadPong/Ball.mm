@@ -85,7 +85,7 @@
 
 -(void) respawn: (float)withAngle{
     [self reset];
-    const int speed = 35;
+    const int speed = 25;
     
     double x = sin(withAngle * M_PI / 180) * speed;
     double y = cos(withAngle * M_PI / 180) * speed;
@@ -95,7 +95,6 @@
 }
 
 -(void) respawnLeft {
-//    int speed = 35;
     int margin = 40;
     int r = arc4random() % (180-margin);
     r += (180-(margin/2));
@@ -104,7 +103,6 @@
 }
 
 -(void) respawnRight{
-//    int speed = 35;
     int margin = 40;
     int r = arc4random() % (180-margin);
     r += (margin/2);

@@ -59,7 +59,6 @@
     return self;
 }
 
-
 #ifdef DRAW_DEBUG_INFO
 -(void)draw{
     [super draw];
@@ -124,10 +123,9 @@
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self
-     selector:@selector(higherLeftScore)
+     selector:@selector(raiseLeftScore)
      name:@"LeftScores"
      object:nil ];
-    
     
     _rightScoreLabel = [CCLabelTTF labelWithString:@"0" fontName:@"SquareHead" fontSize:64];
     _rightScoreLabel.position = ccp(winSize.width/2 + 100,winSize.height - 45);
@@ -135,16 +133,16 @@
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self
-     selector:@selector(higherRightScore)
+     selector:@selector(raiseRightScore)
      name:@"RightScores"
      object:nil ];
 }
 
--(void)higherLeftScore{
+-(void)raiseLeftScore{
     [_leftScoreLabel setString: [NSString stringWithFormat:@"%d",++_leftScore]];
     
 }
--(void)higherRightScore{
+-(void)raiseRightScore{
     [_rightScoreLabel setString: [NSString stringWithFormat:@"%d",++_rightScore]];
 }
 

@@ -15,7 +15,7 @@
         
         
         Sprite = [CCSprite spriteWithFile:@"whitedot.png"
-                                     rect:CGRectMake(50, 50, 50, 100)];
+                                     rect:CGRectMake(50, 50, 50, 150)];
         
         Sprite.position = startPosition;
         
